@@ -1,0 +1,198 @@
+# Production client and dedicated-server pairs for `just pair <node>`.
+# The mod is the horizontal jar from `just horizontal-jars <version>`; Amber, Konfig, and TeaKit resolve from Maven
+# local, then Kaf Maven. Versions follow the shared catalogs.
+# Servers listen on 25591 so they do not collide with other paired suites on the default port.
+
+[project]
+name = "battle-pumpkins"
+
+[repositories]
+mavenLocal = "mavenLocal"
+kaf = "https://maven.kaf.sh"
+fabric = "https://maven.fabricmc.net"
+forge = "https://maven.minecraftforge.net"
+neoforged = "https://maven.neoforged.net/releases"
+
+[[instance]]
+name = "1.21.11-fabric"
+minecraft = "1.21.11"
+loader = "fabric"
+loader_version = "0.19.3"
+sides = ["client", "server"]
+server_properties = { online-mode = "false", enforce-secure-profile = "false", white-list = "false", server-port = "25591" }
+mods = [
+  "./build/libs/horizontal/1.21.11/battlepumpkins-multiloader-0.1.0+1.21.11.jar",
+  "maven:net.fabricmc.fabric-api:fabric-api:0.141.6+1.21.11",
+  "maven:com.iamkaf.amber:amber-fabric:11.7.0+1.21.11",
+  "maven:com.iamkaf.konfig:konfig-fabric:0.10.1+1.21.11",
+  "maven:com.iamkaf.teakit:teakit-fabric:0.19.0+1.21.11",
+  "maven:com.iamkaf.teakit:teakit-playerdriver-fabric:0.19.0+1.21.11",
+]
+
+[[instance]]
+name = "1.21.11-forge"
+minecraft = "1.21.11"
+loader = "forge"
+loader_version = "61.2.0"
+sides = ["client", "server"]
+server_properties = { online-mode = "false", enforce-secure-profile = "false", white-list = "false", server-port = "25591" }
+mods = [
+  "./build/libs/horizontal/1.21.11/battlepumpkins-multiloader-0.1.0+1.21.11.jar",
+  "maven:com.iamkaf.amber:amber-forge:11.7.0+1.21.11",
+  "maven:com.iamkaf.konfig:konfig-forge:0.10.1+1.21.11",
+  "maven:com.iamkaf.teakit:teakit-forge:0.19.0+1.21.11",
+  "maven:com.iamkaf.teakit:teakit-playerdriver-forge:0.19.0+1.21.11",
+]
+
+[[instance]]
+name = "1.21.11-neoforge"
+minecraft = "1.21.11"
+loader = "neoforge"
+loader_version = "21.11.45"
+sides = ["client", "server"]
+server_properties = { online-mode = "false", enforce-secure-profile = "false", white-list = "false", server-port = "25591" }
+mods = [
+  "./build/libs/horizontal/1.21.11/battlepumpkins-multiloader-0.1.0+1.21.11.jar",
+  "maven:com.iamkaf.amber:amber-neoforge:11.7.0+1.21.11",
+  "maven:com.iamkaf.konfig:konfig-neoforge:0.10.1+1.21.11",
+  "maven:com.iamkaf.teakit:teakit-neoforge:0.19.0+1.21.11",
+  "maven:com.iamkaf.teakit:teakit-playerdriver-neoforge:0.19.0+1.21.11",
+]
+
+[[instance]]
+name = "26.1.2-fabric"
+minecraft = "26.1.2"
+loader = "fabric"
+loader_version = "0.19.3"
+sides = ["client", "server"]
+server_properties = { online-mode = "false", enforce-secure-profile = "false", white-list = "false", server-port = "25591" }
+mods = [
+  "./build/libs/horizontal/26.1.2/battlepumpkins-multiloader-0.1.0+26.1.2.jar",
+  "maven:net.fabricmc.fabric-api:fabric-api:0.155.3+26.1.2",
+  "maven:com.iamkaf.amber:amber-fabric:11.7.0+26.1.2",
+  "maven:com.iamkaf.konfig:konfig-fabric:0.10.1+26.1.2",
+  "maven:com.iamkaf.teakit:teakit-fabric:0.19.0+26.1.2",
+  "maven:com.iamkaf.teakit:teakit-playerdriver-fabric:0.19.0+26.1.2",
+]
+
+[[instance]]
+name = "26.1.2-forge"
+minecraft = "26.1.2"
+loader = "forge"
+loader_version = "64.0.9"
+sides = ["client", "server"]
+server_properties = { online-mode = "false", enforce-secure-profile = "false", white-list = "false", server-port = "25591" }
+mods = [
+  "./build/libs/horizontal/26.1.2/battlepumpkins-multiloader-0.1.0+26.1.2.jar",
+  "maven:com.iamkaf.amber:amber-forge:11.7.0+26.1.2",
+  "maven:com.iamkaf.konfig:konfig-forge:0.10.1+26.1.2",
+  "maven:com.iamkaf.teakit:teakit-forge:0.19.0+26.1.2",
+  "maven:com.iamkaf.teakit:teakit-playerdriver-forge:0.19.0+26.1.2",
+]
+
+[[instance]]
+name = "26.1.2-neoforge"
+minecraft = "26.1.2"
+loader = "neoforge"
+loader_version = "26.1.2.109"
+sides = ["client", "server"]
+server_properties = { online-mode = "false", enforce-secure-profile = "false", white-list = "false", server-port = "25591" }
+mods = [
+  "./build/libs/horizontal/26.1.2/battlepumpkins-multiloader-0.1.0+26.1.2.jar",
+  "maven:com.iamkaf.amber:amber-neoforge:11.7.0+26.1.2",
+  "maven:com.iamkaf.konfig:konfig-neoforge:0.10.1+26.1.2",
+  "maven:com.iamkaf.teakit:teakit-neoforge:0.19.0+26.1.2",
+  "maven:com.iamkaf.teakit:teakit-playerdriver-neoforge:0.19.0+26.1.2",
+]
+
+[[instance]]
+name = "26.2-fabric"
+minecraft = "26.2"
+loader = "fabric"
+loader_version = "0.19.3"
+sides = ["client", "server"]
+server_properties = { online-mode = "false", enforce-secure-profile = "false", white-list = "false", server-port = "25591" }
+mods = [
+  "./build/libs/horizontal/26.2/battlepumpkins-multiloader-0.1.0+26.2.jar",
+  "maven:net.fabricmc.fabric-api:fabric-api:0.160.0+26.2",
+  "maven:com.iamkaf.amber:amber-fabric:11.7.0+26.2",
+  "maven:com.iamkaf.konfig:konfig-fabric:0.10.1+26.2",
+  "maven:com.iamkaf.teakit:teakit-fabric:0.19.0+26.2",
+  "maven:com.iamkaf.teakit:teakit-playerdriver-fabric:0.19.0+26.2",
+]
+
+[[instance]]
+name = "26.2-forge"
+minecraft = "26.2"
+loader = "forge"
+loader_version = "65.0.1"
+sides = ["client", "server"]
+server_properties = { online-mode = "false", enforce-secure-profile = "false", white-list = "false", server-port = "25591" }
+mods = [
+  "./build/libs/horizontal/26.2/battlepumpkins-multiloader-0.1.0+26.2.jar",
+  "maven:com.iamkaf.amber:amber-forge:11.7.0+26.2",
+  "maven:com.iamkaf.konfig:konfig-forge:0.10.1+26.2",
+  "maven:com.iamkaf.teakit:teakit-forge:0.19.0+26.2",
+  "maven:com.iamkaf.teakit:teakit-playerdriver-forge:0.19.0+26.2",
+]
+
+[[instance]]
+name = "26.2-neoforge"
+minecraft = "26.2"
+loader = "neoforge"
+loader_version = "26.2.0.88"
+sides = ["client", "server"]
+server_properties = { online-mode = "false", enforce-secure-profile = "false", white-list = "false", server-port = "25591" }
+mods = [
+  "./build/libs/horizontal/26.2/battlepumpkins-multiloader-0.1.0+26.2.jar",
+  "maven:com.iamkaf.amber:amber-neoforge:11.7.0+26.2",
+  "maven:com.iamkaf.konfig:konfig-neoforge:0.10.1+26.2",
+  "maven:com.iamkaf.teakit:teakit-neoforge:0.19.0+26.2",
+  "maven:com.iamkaf.teakit:teakit-playerdriver-neoforge:0.19.0+26.2",
+]
+
+[[instance]]
+name = "26.3-fabric"
+minecraft = "26.3"
+loader = "fabric"
+loader_version = "0.19.5"
+sides = ["client", "server"]
+server_properties = { online-mode = "false", enforce-secure-profile = "false", white-list = "false", server-port = "25591" }
+mods = [
+  "./build/libs/horizontal/26.3/battlepumpkins-multiloader-0.1.0+26.3.jar",
+  "maven:net.fabricmc.fabric-api:fabric-api:0.160.6+26.3",
+  "maven:com.iamkaf.amber:amber-fabric:11.7.0+26.3",
+  "maven:com.iamkaf.konfig:konfig-fabric:0.10.1+26.3",
+  "maven:com.iamkaf.teakit:teakit-fabric:0.19.0+26.3",
+  "maven:com.iamkaf.teakit:teakit-playerdriver-fabric:0.19.0+26.3",
+]
+
+[[instance]]
+name = "26.3-forge"
+minecraft = "26.3"
+loader = "forge"
+loader_version = "66.0.3"
+sides = ["client", "server"]
+server_properties = { online-mode = "false", enforce-secure-profile = "false", white-list = "false", server-port = "25591" }
+mods = [
+  "./build/libs/horizontal/26.3/battlepumpkins-multiloader-0.1.0+26.3.jar",
+  "maven:com.iamkaf.amber:amber-forge:11.7.0+26.3",
+  "maven:com.iamkaf.konfig:konfig-forge:0.10.1+26.3",
+  "maven:com.iamkaf.teakit:teakit-forge:0.19.0+26.3",
+  "maven:com.iamkaf.teakit:teakit-playerdriver-forge:0.19.0+26.3",
+]
+
+[[instance]]
+name = "26.3-neoforge"
+minecraft = "26.3"
+loader = "neoforge"
+loader_version = "26.3.0.4-beta"
+sides = ["client", "server"]
+server_properties = { online-mode = "false", enforce-secure-profile = "false", white-list = "false", server-port = "25591" }
+mods = [
+  "./build/libs/horizontal/26.3/battlepumpkins-multiloader-0.1.0+26.3.jar",
+  "maven:com.iamkaf.amber:amber-neoforge:11.7.0+26.3",
+  "maven:com.iamkaf.konfig:konfig-neoforge:0.10.1+26.3",
+  "maven:com.iamkaf.teakit:teakit-neoforge:0.19.0+26.3",
+  "maven:com.iamkaf.teakit:teakit-playerdriver-neoforge:0.19.0+26.3",
+]

@@ -1,0 +1,36 @@
+{
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
+    ],
+    "contact": {
+        "homepage": "https://github.com/iamkaf/battle-pumpkins",
+        "sources": "https://github.com/iamkaf/battle-pumpkins"
+    },
+    "license": "${license}",
+    "icon": "icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.iamkaf.battlepumpkins.BattlePumpkinsFabric"
+        ],
+        "client": [
+            "com.iamkaf.battlepumpkins.BattlePumpkinsFabricClient"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=${fabric_loader_version}",
+        "fabric-api": "*",
+        "minecraft": "${fabric_version_range}",
+        "java": ">=${java_version}",
+        "konfig": "*",
+        "amber": ">=${amber_version}"
+    },
+    "suggests": {
+        "modmenu": ">=${mod_menu_version}"
+    }
+}

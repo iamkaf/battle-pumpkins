@@ -21,7 +21,6 @@
   "battlepumpkins.config.option.force_event": "Force Event",
   "battlepumpkins.config.option.force_event.info": "Runs Halloween week or Lantern Night now, whatever the date. Handy for servers, events, and videos.",
   "battlepumpkins.config.option.force_event.off": "Off",
-  "battlepumpkins.config.option.force_event.off.info": "Follow the calendar.",
   "battlepumpkins.config.option.force_event.week": "Halloween Week",
   "battlepumpkins.config.option.force_event.week.info": "Lots of plain wild pumpkins every night.",
   "battlepumpkins.config.option.force_event.lantern_night": "Lantern Night",

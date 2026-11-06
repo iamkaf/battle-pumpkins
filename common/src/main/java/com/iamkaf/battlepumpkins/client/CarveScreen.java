@@ -34,6 +34,7 @@ public class CarveScreen extends Screen {
     private static final int COLUMN_WIDTH = 52;
     private static final int PREVIEW_SCALE = 2;
     private static final double EDIT_DISTANCE_SQR = 64.0;
+    private static final int LIT_SKIN_SHADE = 0x80000000;
 
     private final BattlePumpkin pumpkin;
     private final Face original;
@@ -198,6 +199,10 @@ public class CarveScreen extends Screen {
     private void drawPumpkin(Canvas canvas, int x, int y, int scale, Light glow) {
         int size = Face.SIZE * scale;
         canvas.texture(PUMPKIN_SIDE, x, y, size);
+        if (glow.glows()) {
+            // A lit face is yellow on orange skin; dim the skin as night does in the world, so the glow stands out.
+            canvas.fill(x, y, x + size, y + size, LIT_SKIN_SHADE);
+        }
         for (int py = 0; py < Face.SIZE; py++) {
             for (int px = 0; px < Face.SIZE; px++) {
                 if (face.carved(px, py)) {

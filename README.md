@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="assets/banner.gif" alt="Battle Pumpkins: one pumpkin in a row of pumpkins hops, gets a face carved into it, and lights up when a torch drops inside" width="100%" />
-</p>
+![Battle Pumpkins](.github/banner.webp)
 
 <p align="center">
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/Minecraft-1.21.11_to_26.3-4ade80.svg?logo=lu:Pickaxe&amp;variant=secondary&amp;mode=dark" /><img alt="Minecraft 1.21.11 to 26.3" src="https://shieldcn.dev/badge/Minecraft-1.21.11_to_26.3-4ade80.svg?logo=lu:Pickaxe&amp;variant=secondary&amp;mode=light" /></picture>
@@ -20,7 +18,9 @@ Wild Battle Pumpkins spawn on grass in the Overworld at night. Walk up to one an
 When the sun comes up and nobody is around, a wild one falls asleep. It lines up with the block grid, faces straight ahead, casts no shadow, and holds perfectly still, so it looks like any other pumpkin. Walking within six blocks wakes it up. Sneaking doesn't.
 
 <p align="center">
-  <img src="assets/disguise.png" alt="Four pumpkins on the grass in daylight. One of them is a sleeping Battle Pumpkin" width="100%" />
+  <img src=".github/disguise.webp" alt="Four pumpkins on the grass at noon. One of them is a sleeping Battle Pumpkin" width="100%" />
+  <br />
+  <em>Four pumpkins at noon. One of them is a sleeping Battle Pumpkin.</em>
 </p>
 
 Use shears on a wild one to catch it. It gets the classic carved pumpkin face, sits down, and the carving screen opens.
@@ -30,7 +30,9 @@ Use shears on a wild one to catch it. It gets the classic carved pumpkin face, s
 The carving screen is a 16×16 grid over the pumpkin's face, one square per pixel. Left-click and drag to carve, right-click and drag to fill pixels back in. **Clear** wipes the face and **Done** saves it. Sneak and right-click your pumpkin any time to carve a new face. Only the owner can carve it.
 
 <p align="center">
-  <img src="assets/carving.png" alt="The carving screen: a 16 by 16 grid over the pumpkin texture, a small preview, and Take Out, Clear, and Done buttons" width="60%" />
+  <img src=".github/carving.webp" alt="The carving screen showing a torch-lit cat face on the 16 by 16 grid, a small preview, and Take Out, Clear, and Done buttons" width="60%" />
+  <br />
+  <em>The carving screen with a torch-lit cat face.</em>
 </p>
 
 ## Lights
@@ -38,7 +40,9 @@ The carving screen is a 16×16 grid over the pumpkin's face, one square per pixe
 Right-click your pumpkin with a torch, soul torch, or redstone torch to put it inside. The carved face glows orange, blue, or red to match. Giving it a different torch pops the old one out, and **Take Out** on the carving screen drops it. Lights only change the color of the face.
 
 <p align="center">
-  <img src="assets/lights.png" alt="Four Battle Pumpkins with the same face at night, lit green with witch light, red with a redstone torch, blue with a soul torch, and orange with a torch" width="100%" />
+  <img src=".github/lights.webp" alt="Four Battle Pumpkins with the same grinning face at night, lit orange with a torch, blue with a soul torch, red with a redstone torch, and green with witch light" width="100%" />
+  <br />
+  <em>One face in four lights: torch, soul torch, redstone torch, and witch light.</em>
 </p>
 
 ## Your pumpkin
@@ -49,7 +53,19 @@ Right-click your pumpkin with a torch, soul torch, or redstone torch to put it i
 - Name tags work.
 - It never despawns.
 
+<p align="center">
+  <img src=".github/defend.webp" alt="A torch-lit Battle Pumpkin leaping at a zombie at night" width="100%" />
+  <br />
+  <em>A Battle Pumpkin body-slamming a zombie.</em>
+</p>
+
 A Battle Pumpkin you own doesn't die at 0 health. Its light goes out and it falls asleep, keeping its face, and nothing can hurt it until you feed it pumpkin seeds. Then it wakes up with its light back on. The void and `/kill` still remove it.
+
+<p align="center">
+  <img src=".github/knockout.webp" alt="A knocked-out Battle Pumpkin with its light out beside a lit one at night, with pumpkin seeds in the hotbar" width="100%" />
+  <br />
+  <em>A knocked-out pumpkin, light out, next to a lit one. Pumpkin seeds wake it up.</em>
+</p>
 
 ## Halloween
 
@@ -60,7 +76,9 @@ Battle Pumpkins goes by the real-world date on the server.
 - **Lantern Night, October 31**, is the big one. Even more spawn, and every wild one is already carved and lit, wearing one of a dozen Lantern Night faces. Some burn with **witch light**, a green flame you can only get that night. It keeps burning until you swap it for a torch or take it out.
 
 <p align="center">
-  <img src="assets/lantern-night.png" alt="Twelve Lantern Night pumpkins on shelves, each with a different carved face, lit orange, blue, and green" width="100%" />
+  <img src=".github/lantern-night.webp" alt="Twelve Lantern Night pumpkins on a meadow at night, each with a different carved face, lit orange, blue, and green" width="100%" />
+  <br />
+  <em>Twelve Lantern Night pumpkins, each wearing a different face.</em>
 </p>
 
 ## Next Halloween
@@ -78,7 +96,7 @@ The settings live in `config/battlepumpkins/server.toml`. Server operators can a
 Each setting on the config screen shows a picture of what it changes.
 
 <p align="center">
-  <img src="assets/config.png" alt="The Battle Pumpkins config screen with Off-Season Spawns, Halloween Events, and Force Event, and a picture of a pumpkin at night beside them" width="100%" />
+  <img src=".github/config.webp" alt="The Battle Pumpkins config screen moving through Off-Season Spawns, Halloween Events, and Force Event, each with its picture and description" width="100%" />
 </p>
 
 ## Current support

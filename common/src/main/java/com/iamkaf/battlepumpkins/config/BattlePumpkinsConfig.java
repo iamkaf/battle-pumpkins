@@ -55,9 +55,8 @@ public final class BattlePumpkinsConfig {
                 .info(info -> picturePanel(info, "halloween_events", "halloween_week"))
                 .build();
         FORCE_EVENT = builder.dropdown("force_event", NOT_FORCED, options -> options
-                        .option(NOT_FORCED, option -> option
-                                .labelKey(key("option.force_event.off"))
-                                .info(info -> picturePanel(info, "force_event.off", "off_season")))
+                        // No panel of its own, so the row shows Force Event's panel while nothing is forced.
+                        .option(NOT_FORCED, option -> option.labelKey(key("option.force_event.off")))
                         .option(optionValue(HalloweenEvent.WEEK), option -> option
                                 .labelKey(key("option.force_event.week"))
                                 .info(info -> picturePanel(info, "force_event.week", "halloween_week")))
